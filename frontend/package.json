@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT OR Apache-2.0",
   "scripts": {
+    "build": "npm run build --workspace artcraft -- --outDir ../../../dist --emptyOutDir",
+    "deploy": "netlify deploy --filter artcraft",
     "test:desktop-session": "node tools/testing/desktop-session.mjs",
     "perf:desktop": "node tools/performance/run.mjs"
   },
